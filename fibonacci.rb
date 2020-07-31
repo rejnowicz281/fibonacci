@@ -10,4 +10,16 @@ def fibonacci_iterate(n)
   return arr[n]
 end
 
-p fibonacci_iterate(40)
+# p fibonacci_iterate(40)
+
+def fibonacci_recursive(n)
+  if n == 0 
+    0
+  elsif n == 1
+    1
+  else 
+    fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
+  end
+end
+
+p fibonacci_recursive(13)
